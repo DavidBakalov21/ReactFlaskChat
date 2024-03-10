@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif; /* Bootstrap default font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Bootstrap default background */
+}
+.container {
+    text-align: center;
+}
+h1 {
+    font-size: 2.5rem; /* Bootstrap h1 font size */
+    margin-bottom: 0.5rem;
+}
+.lead {
+    font-size: 1.25rem; /* Bootstrap lead paragraph size */
+    font-weight: 300;
+}
+.links {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

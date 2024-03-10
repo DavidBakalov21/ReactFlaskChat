@@ -1,0 +1,9 @@
+.messageBlock {
+    background-color: #f6fa89;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
