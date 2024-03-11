@@ -1,9 +1,19 @@
 import "../styles/Message.css";
-
-function Message({ message }) {
+import { useEffect, useState } from "react";
+function Message({ message, sender }) {
+  const [className, setClassName] = useState("");
+useEffect(() =>{
+  if(sender === sessionStorage.getItem("user")){
+    setClassName("messageBlockRight");
+  }else{
+    setClassName("messageBlockLeft");
+  }
+},[])
   return (
-    <div className="messageBlock">
-      {message}
+    
+    <div className={className}>
+      {sender}
+      <p>{message}</p>
     </div>
   );
 }

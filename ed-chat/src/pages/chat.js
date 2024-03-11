@@ -49,6 +49,7 @@ function Chat() {
         message +
         email,
       room: roomID,
+      sender: sessionStorage.getItem("user"),
     };
     console.log(messageData);
     if (socketIO) {
@@ -64,7 +65,7 @@ function Chat() {
       <div id="chat-container">
         <div id="chat-messages">
           {list.map((i) => (
-            <Message key={i.id} message={i.message} />
+            <Message key={i.id} message={i.message} sender={i.sender}/>
           ))}
         </div>
         <input
